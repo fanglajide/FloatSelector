@@ -67,7 +67,7 @@ public class WindowView extends LinearLayout {
 
     public void setChildlist(List<List<String>> list) {
         this.childlist = list;
- }
+    }
 
     public void setParentlist(List<Object> list) {
         this.parentlist = list;

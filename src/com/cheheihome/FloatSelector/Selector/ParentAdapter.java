@@ -74,10 +74,11 @@ public class ParentAdapter extends BaseAdapter {
         TextView tv = new TextView(mContext);
         tv.setTextSize(20);
         tv.setText((CharSequence) parentlist.get(position));
-       tv.setTextColor(mContext.getResources().getColor(android.R.color.black));
+        tv.setTextColor(mContext.getResources().getColor(android.R.color.black));
         tv.setPadding(5, 10, 10, 5);
-        if(position==currentItem)tv.setBackgroundColor(mContext.getResources().getColor(android.R.color.holo_orange_light));
-         convertView = tv;
+        if (position == currentItem)
+            tv.setBackgroundColor(mContext.getResources().getColor(android.R.color.holo_orange_light));
+        convertView = tv;
 
         return convertView;
     }
@@ -90,7 +91,7 @@ public class ParentAdapter extends BaseAdapter {
         this.currentItem = currentItem;
         if (parentSelectListener != null)
             parentSelectListener.SelectItem(currentItem);
-    notifyDataSetChanged();
+        notifyDataSetChanged();
     }
 
 
